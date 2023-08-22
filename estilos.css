@@ -16,32 +16,27 @@
     font-family: cafe;
 }
 
-header{
+.navbar{
     height: 80px;
-    width: 100%;
-    padding: 20px;
-    background-color: #8C7983;
-    display: flex;
-    justify-content: space-between;
+    margin-bottom: 5px;
+    background-color: #8C7983
 }
 
-.barra ul{
-    list-style: none;
+.navbar-brand img{
+    height: 60px;
 }
 
-.barra ul li{
-    display: inline-block;
+.nav-link{
+    color: white !important;
 }
 
-.barra a{
-    text-decoration: none;
+.navbar p{
     color: white;
     font-size: 25px;
-    margin: 10px;
-
+    
 }
 
-.barra a:hover{
+.navbar p span{
     color: black;
 }
 
@@ -49,6 +44,7 @@ header{
     width: 100%;
     height: 700px;
     color: black;
+    margin-top: 80px;
     /* background-color: rgba(51, 51, 51, 0.226); */
     text-align: center;
     background-image: url(images/portada.png);
@@ -73,6 +69,8 @@ header{
 .guia{
     text-align: center;
     font-size: 30px;
+    background-color: #8c798388;
+    padding: 12px;
 }
 
 .consultaGuia{

@@ -22,12 +22,17 @@
     background-color: #8C7983
 }
 
+
 .navbar-brand img{
     height: 60px;
 }
 
 .nav-link{
     color: white !important;
+}
+
+.nav-link:hover{
+    color: black !important;
 }
 
 .navbar p{
@@ -38,6 +43,14 @@
 
 .navbar p span{
     color: black;
+}
+
+@media only screen and (min-width:0) and (max-width:576px) {
+    .navbar-collapse{
+        background-color: #8c798381; 
+        display: flex;
+        justify-content: center !important;
+    }
 }
 
 .call{
@@ -51,6 +64,7 @@
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
+    background-color: rgba(0, 0, 0, 0.8)
     /* display: flex;
     justify-content: center;
     align-items: center; */
@@ -84,7 +98,12 @@
     border-style: double;
 }
 
-.guiaIza{
+.consultaGuia:hover{
+    color: black;
+}
+
+
+/* .guiaIza{
     display: inline;
 }
 
@@ -98,34 +117,7 @@
 
 .guiaDer img{
     width: 29%;
-}
-
-.textoCursos{
-    text-align: center;
-    font-size: 30px;
-}
-
-main .curso1{
-    background-color: #8C7983;
-    color: rgb(0, 0, 0);
-    padding: 10px;
-    margin: 10px;
-}
-
-.curso1 img{
-    width: 30%;
-}
-
-main .curso2{
-    background-color: #8C7983;
-    color: rgb(0, 0, 0);
-    padding: 10px;
-    margin: 10px;
-}
-
-.curso2 img{
-    width: 15%;
-}
+} */
 
 .promoción{
     text-align: center;
@@ -142,14 +134,78 @@ main .curso2{
     border-style: double;
 }
 
+.descuentoPasaje:hover{
+    color: black;
+}
+
+/* pagina CURSOS */
+.textoCursos{
+    text-align: center;
+    font-size: 30px;
+}
+
+
+.nleftcurso1{
+    height: 400px;
+    width: 50%;
+    background-color: #8c7983af;
+    background-size: cover;
+    background-position: center;
+    background-image: url(images/fotografía.jpg)
+}
+
+.nrightcurso1{
+    background-color: #8c798365;
+}
+
+.trabajo{
+font-family: yesterday;
+font-size: 50px;
+text-align: center;
+background-color: #8c79837a;
+
+}
+
+.nrightcurso2{
+    height: 400px;
+    width: 50%;
+    background-color: #8c7983af;
+    background-size: cover;
+    background-position: center;
+    background-image: url(images/redesociales.avif)
+}
+
+.nleftcurso2{
+    background-color: #8c798365;
+}
+
+.fotografia{
+    font-family: yesterday;
+font-size: 50px;
+text-align: center;
+background-color: #8c79837a;
+}
+
+/* página GUIAS */
 .proponemos{
     text-align: center;
     font-size: 30px;
 }
 
+
 .argentina{
     font-family: yesterday;
     font-size: 60px;
+    text-align: center;
+    background-color: #8c798344;
+}
+
+.nleft{
+    height: 400px;
+    width: 50%;
+    background-size: cover;
+    background-position: center;
+    background-image: url(./images/argentina.jpg);
 }
 
 .lista{
@@ -162,37 +218,41 @@ main .curso2{
     padding: 10px;
 }
 
+/* Pagina SOBRE MI */
 .soy{
     text-align: center;
     font-family: yesterday;
     font-size: 100px;
 }
 
-.miFoto{
-    background-color: #8C7983;
-}
-
-.miFoto img{
+.nleftyo{
+    height: 400px;
     width: 50%;
-    display: inline-block;
+    background-size: cover;
+    background-position: center;
+    background-image: url(images/sobremi.jpg);
 }
 
-.miFoto img{
-    display: inline;
-    margin: 10px;
-    padding: 10px;
+.nrightyo{
+    background-color: #8c79833a;
 }
 
-/* La idea acá sería que el texto esté al lado de la imagen, pero no se porqué no estaría pudiendo */
-
+/* pagina CONTACTO */
 .miFoto p{
     display: inline;
 }
 
 .contacto{
     font-size: 20px;
+    margin: 15px;
 }
 
+.contacta{
+    font-family: yesterday;
+    font-size: 50px;
+}
+
+/* FOOTER */
 footer{
     margin-top: 30px;
 }
@@ -206,3 +266,20 @@ footer{
     text-align: center;
 }
 
+.paginas a{
+    text-decoration: none !important;
+    color: white;
+}
+
+.paginas a:hover{
+    color: black;
+}
+
+@media only screen and (max-width:574px){
+    .nleftcurso1{
+        width:100%;
+    }
+    .nrightcurso2{
+        width:100%;
+    }
+}

@@ -59,6 +59,10 @@
     color: black;
     margin-top: 80px;
     /* background-color: rgba(51, 51, 51, 0.226); */
+    /* display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center; */
     text-align: center;
     background-image: url(images/portada.png);
     background-size: cover;
@@ -102,22 +106,13 @@
     color: black;
 }
 
+.containerCarousel{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
 
-/* .guiaIza{
-    display: inline;
 }
-
-.guiaDer{
-    display: inline;
-}
-
-.guiaIza img{
-    width: 25%;
-}
-
-.guiaDer img{
-    width: 29%;
-} */
 
 .promoción{
     text-align: center;
@@ -192,7 +187,6 @@ background-color: #8c79837a;
     font-size: 30px;
 }
 
-
 .argentina{
     font-family: yesterday;
     font-size: 60px;
@@ -245,6 +239,7 @@ background-color: #8c79837a;
 .contacto{
     font-size: 20px;
     margin: 15px;
+    background-image: linear-gradient(#8c798381 70%,white);
 }
 
 .contacta{
@@ -275,11 +270,31 @@ footer{
     color: black;
 }
 
+.footerRedes .redes i{
+    font-size: 40px;
+    margin: 10px;
+    transform: rotate(0);
+    transition: all 1s;
+}
+
+.footerRedes .redes i:hover{
+    color: black;
+    transform: rotateY(360deg);
+}
+
 @media only screen and (max-width:574px){
     .nleftcurso1{
         width:100%;
     }
     .nrightcurso2{
         width:100%;
+    }
+
+    .contacto{
+        text-align: center;
+    }
+
+    .nleft{
+        width: 100%;
     }
 }

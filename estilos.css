@@ -87,6 +87,82 @@
   color: black;
 }
 
+.galeria{
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-template-rows: repeat(3, 200px);
+  grid-template-areas:"img1 img1 img2 img3"
+                      "img1 img1 img4 img5"
+                      "img6 img7 img4 img8";
+  grid-gap: 20px;
+  padding: 30px;
+}
+
+.item{
+  border: 2px solid #000;
+  border-radius: 15px;
+  transition: all 0.6s;
+}
+
+.item:hover{
+  transform: scale(1.10);
+}
+
+.item1{
+  grid-area: img1;
+  background-image: url(images/rio.jpg);
+  background-size: cover;
+  background-position: center;
+}
+
+.item2{
+  grid-area: img2;
+  background-image: url(images/bosque.jpg);
+  background-size: cover;
+  background-position: center;
+}
+
+.item3{
+  grid-area: img3;
+  background-image: url(images/naturaleza.jpg);
+  background-size: cover;
+  background-position: center;
+}
+
+.item4{
+  grid-area: img4;
+  background-image: url(images/atardecer.jpg);
+  background-size: cover;
+  background-position: center;
+}
+
+.item5{
+  grid-area: img5;
+  background-image: url(images/mesquita.jpg);
+  background-size: cover;
+  background-position: center;
+}
+
+.item6{
+  grid-area: img6;
+  background-image: url(images/brujula.jpg);
+  background-size: cover;
+  background-position: center;
+}
+
+.item7{
+  grid-area: img7;
+  background-image: url(images/otroño.jpg);
+  background-size: cover;
+  background-position: center;
+}
+.item8{
+  grid-area: img8;
+  background-image: url(images/invierno.jpg);
+  background-size: cover;
+  background-position: center;
+}
+
 .containerCarousel {
   display: flex;
   flex-direction: column;
@@ -176,9 +252,15 @@
   background-color: rgba(140, 121, 131, 0.2666666667);
 }
 
-.lista {
-  margin: 10px;
-  padding: 10px;
+#basico{
+  font-size: 30px;
+  color: #8C7983;
+}
+
+.hotel{
+  height: 150px;
+  width: 250%;
+  display: inline;
 }
 
 .video {
@@ -252,6 +334,7 @@ footer .redes i:hover {
     justify-content: center !important;
   }
 }
+
 @media only screen and (max-width: 574px) {
   .nleftcurso1 {
     width: 100%;
@@ -266,3 +349,4 @@ footer .redes i:hover {
     width: 100%;
   }
 }/*# sourceMappingURL=estilos.css.map */
+

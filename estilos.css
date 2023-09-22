@@ -186,6 +186,12 @@
   align-items: center;
 }
 
+.sorprenda {
+  text-align: center;
+  font-family: yesterday;
+  font-size: 70px;
+}
+
 .textoCursos {
   text-align: center;
   font-size: 30px;
@@ -202,12 +208,28 @@
 
 .nrightcurso1 {
   background-color: rgba(140, 121, 131, 0.3960784314);
+  font-size: 20px;
 }
 .nrightcurso1 .trabajo {
   font-family: yesterday;
   font-size: 50px;
   text-align: center;
   background-color: rgba(140, 121, 131, 0.4784313725);
+}
+
+.botonTrabajo {
+  margin-top: 10px;
+  padding: 10px;
+  background-color: #8C7983;
+  text-decoration: none;
+  color: white;
+  text-align: center;
+  border-radius: 10px;
+  border-style: double;
+}
+
+.botonTrabajo:hover {
+  color: black;
 }
 
 .nrightcurso2 {
@@ -221,12 +243,28 @@
 
 .nleftcurso2 {
   background-color: rgba(140, 121, 131, 0.3960784314);
+  font-size: 20px;
 }
 .nleftcurso2 .fotografia {
   font-family: yesterday;
   font-size: 50px;
   text-align: center;
   background-color: rgba(140, 121, 131, 0.4784313725);
+}
+
+.botonFotografia {
+  margin-top: 10px;
+  padding: 10px;
+  background-color: #8C7983;
+  text-decoration: none;
+  color: white;
+  text-align: center;
+  border-radius: 10px;
+  border-style: double;
+}
+
+.botonFotografia:hover {
+  color: black;
 }
 
 /* página GUIAS */
@@ -256,11 +294,11 @@
 }
 
 .nleft {
-  height: 400px;
+  height: 600px;
   width: 50%;
   background-size: cover;
   background-position: center;
-  background-image: url(./images/argentina.jpg);
+  background-image: url(./images/tango.jpg);
 }
 
 .argentina {
@@ -270,20 +308,40 @@
   background-color: rgba(140, 121, 131, 0.2666666667);
 }
 
-#basicos {
-  font-size: 30px;
+#lugares {
+  font-size: 35px;
   color: #8C7983;
 }
 
-.hotel {
-  height: 150px;
-  width: 250%;
-  display: inline;
+.must {
+  margin: 20px;
+  font-size: 20px;
 }
 
-.lista {
-  margin: 10px;
-  padding: 10px;
+.basicos {
+  display: flex;
+}
+.basicos .textoBasicos {
+  width: 50%;
+}
+.basicos .contenedoresBasicos {
+  width: 50%;
+  display: flex;
+  align-items: center;
+}
+.basicos .contenedoresBasicos .contenedores {
+  text-decoration: none;
+  width: 50%;
+  border: rgb(0, 0, 0) solid 2px;
+  border-radius: 10px;
+  background-color: rgba(140, 121, 131, 0.4117647059);
+  height: 200px;
+  width: 100px;
+  margin: 5px;
+  padding: 5px;
+}
+.basicos .contenedoresBasicos .contenedores img {
+  width: 100%;
 }
 
 .video {
@@ -309,7 +367,7 @@
 .soy {
   text-align: center;
   font-family: yesterday;
-  font-size: 100px;
+  font-size: 80px;
 }
 
 .nleftyo {
@@ -321,7 +379,7 @@
 }
 
 .nrightyo {
-  background-color: rgba(140, 121, 131, 0.2274509804);
+  background-color: rgba(140, 121, 131, 0.0901960784);
 }
 
 /* pagina CONTACTO */
@@ -363,11 +421,13 @@ footer {
   margin-top: 30px;
   background-color: #8C7983;
   color: white;
+  font-size: 20px;
   text-align: center;
 }
 footer .paginas a {
   text-decoration: none !important;
   color: white;
+  font-size: 20px;
 }
 footer .paginas a:hover {
   color: black;
